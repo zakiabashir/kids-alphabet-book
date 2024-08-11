@@ -25,7 +25,7 @@ nav a{
     border-radius: 20%;
     font-size: larger;
    padding: 5px 5px 5px 5px;
-    background-color: rgb(5, 245, 109);
+    background-color: rgb(6, 243, 108);
     color: red;
 }
 nav a:hover{
@@ -92,7 +92,7 @@ section div{
 .alphabet-card {
     width: 600px;
     height: 300px;
-    background-color: aqua;
+    background-color:#00ffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -122,10 +122,8 @@ form {
     margin:  auto;
     padding: 20px;
 }
-section h2{
-    color: rgb(119, 0, 255);
-    font-size: 3rem;
-}
+
+
 
 form h2 {
     color: #e81b1b;
@@ -164,27 +162,7 @@ form button:hover {
     background-color: #5345a0;
 }
 
-.feedback {
-    margin-top: 30px;
-    color: rgb(247, 41, 96);
-    background-color: #61b2d4;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-    width: 50%;
-    text-align: center;
-    padding: 15px 20px;
-    
-}
 
-.feedback h2 {
-    color: #560fee;
-    font-size: 2rem;
-}
-
-.feedback p {
-    font-size: 1.2em;
-    
-}
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 1024px) {
@@ -224,6 +202,11 @@ form button:hover {
             left: 50%;
             transform: translate(-50%, -50%);
           }
+    }
+    .container{
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
     }
     nav a{
         flex-direction: column;
@@ -276,4 +259,67 @@ form button:hover {
 
 .letter-preview img {
     animation: bounce 2s infinite;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.header img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+h1 {
+    text-align: center;
+    color: #ff9800;
+    margin-top: -20px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input[type="text"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.rating {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.rating label {
+    margin: 0;
+    text-align: center;
+}
+.rating input {
+    margin-top: 5px;
+}
+textarea {
+    height: 100px;
+}
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.submit-button:hover {
+    background-color: #333;
 }

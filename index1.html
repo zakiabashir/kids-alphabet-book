@@ -193,30 +193,97 @@
     </div>
 
     </div>
-    <!-- Parent's Feedback Form -->
-    <section id="form" >
-        <img src="asset/feedback.png" alt="My Kids Alphabet Book Cover" class="form-image">
-        
-        <form action="sub_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
+
+
+    <div class="container">
+        <div class="header">
+            <img src="asset/feedback.png" alt="Proactive Kids">
+        </div>
+
+        <form>
+            <label for="parentName">Parents Name:</label>
+            <input type="text" id="parentName" name="parentName">
+
+            <label for="kidName">Kids Name / Grade:</label>
+            <input type="text" id="kidName" name="kidName">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label>Comment and Suggestion for the UI design:</label><br>
+
+            <div class="rating">
+                <div>
+                    <label>How Was UI Design?</label>
+                    <div>
+                        <input type="radio" id="ui-excellent" name="ui-design" value="excellent">
+                        <label for="ui-excellent">❤️</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ui-good" name="ui-design" value="good">
+                        <label for="ui-good">😊</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ui-normal" name="ui-design" value="normal">
+                        <label for="ui-normal">😐</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ui-bad" name="ui-design" value="bad">
+                        <label for="ui-bad">😟</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>How Was Scrolling Behavior?</label>
+                    <div>
+                        <input type="radio" id="scroll-excellent" name="scroll-behavior" value="excellent">
+                        <label for="scroll-excellent">❤️</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="scroll-good" name="scroll-behavior" value="good">
+                        <label for="scroll-good">😊</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="scroll-normal" name="scroll-behavior" value="normal">
+                        <label for="scroll-normal">😐</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="scroll-bad" name="scroll-behavior" value="bad">
+                        <label for="scroll-bad">😟</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>How Was Images & Alphabets Naming Convention?</label>
+                    <div>
+                        <input type="radio" id="images-excellent" name="images-naming" value="excellent">
+                        <label for="images-excellent">❤️</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="images-good" name="images-naming" value="good">
+                        <label for="images-good">😊</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="images-normal" name="images-naming" value="normal">
+                        <label for="images-normal">😐</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="images-bad" name="images-naming" value="bad">
+                        <label for="images-bad">😟</label>
+                    </div>
+                </div>
+            </div>
+
+            <label for="suggestion">Please Give Your Suggestion</label>
+            <textarea id="suggestion" name="suggestion" placeholder="Write Message............"></textarea>
+
+            <button type="submit" class="submit-button">Submit Review</button>
         </form>
-    
-    <!-- Feedback Section -->
-    <div class="feedback">
-        <h2>What Parents Are Saying</h2>
-        <p>"My child loves this alphabet book! It's so colorful and engaging." - Parent A</p>
-        <p>"The book is a great way to teach the ABCs. Highly recommend!" - Parent B</p>
-        <!-- Add more testimonials here -->
     </div>
-</section>
+
+
 
     <p>The End! Now you know your ABCs!</p>
-    <script src="script.js"></script>
+    
 </body>
 </html>
