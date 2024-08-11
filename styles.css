@@ -1,0 +1,279 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 0px;
+    margin:0px
+    
+}
+header h1{
+    color: rgba(21, 10, 233, 0.904);
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 100px ;
+    font-size: 3rem;
+text-shadow: 2px 2px 5px rgb(21, 237, 25);
+background-color: #f5f5f5;
+}
+
+nav a{
+    
+    text-align: center;
+    margin-right: 10px;
+    border:2px solid #133415;
+    border-radius: 20%;
+    font-size: larger;
+   padding: 5px 5px 5px 5px;
+    background-color: rgb(5, 245, 109);
+    color: red;
+}
+nav a:hover{
+    background-color: #61b2d4;
+}
+.front-page {
+    position: relative;
+    height: 100%;
+    background-color: #b6c9d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cover-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+
+.read-now-button {
+    position:absolute;
+    bottom: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 35px 35px;
+    border: 2px solid rgb(0, 26, 128);
+    
+    margin-left:15%;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.read-now-button:hover {
+    background-color: #5a45a0;
+}
+
+.alphabet-container {
+    padding: 40px 20px;
+    
+}
+
+.alphabet-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+section div{
+    margin-left: 24%;
+}
+.alphabet-card {
+    width: 600px;
+    height: 300px;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.alphabet-card img {
+    max-width: 100%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.alphabet-card h2 {
+    font-size: 2em;
+    color: #333333;
+}
+
+.alphabet-card p {
+    font-size: 1.2em;
+    color: #666666;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    margin:  auto;
+    padding: 20px;
+}
+section h2{
+    color: rgb(119, 0, 255);
+    font-size: 3rem;
+}
+
+form h2 {
+    color: #e81b1b;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 1.2em;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #412b2bae;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #5345a0;
+}
+
+.feedback {
+    margin-top: 30px;
+    color: rgb(247, 41, 96);
+    background-color: #61b2d4;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    width: 50%;
+    text-align: center;
+    padding: 15px 20px;
+    
+}
+
+.feedback h2 {
+    color: #560fee;
+    font-size: 2rem;
+}
+
+.feedback p {
+    font-size: 1.2em;
+    
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .alphabet-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .alphabet-card h2 {
+        font-size: 1.8em;
+    }
+
+    .alphabet-card p {
+        font-size: 1.1em;
+    }
+
+    form h2 {
+        font-size: 1.8em;
+    }
+
+    form label,
+    form input,
+    form textarea {
+        font-size: 1.1em;
+    }
+
+    form button {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1{
+        font-size: 2rem;
+        item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+    }
+    nav a{
+        flex-direction: column;
+        width: 100%;
+        display:list-item;
+    }
+    .alphabet-container {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .alphabet-card h2 {
+        font-size: 1.6em;
+    }
+
+    .alphabet-card p {
+        font-size: 1em;
+    }
+
+    form h2 {
+        font-size: 1.6em;
+    }
+
+    form label,
+    form input,
+    form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+    section{
+        width: 100%;
+        
+    }
+}
+/* Add animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.letter-preview img {
+    animation: bounce 2s infinite;
+}
